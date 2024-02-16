@@ -25,16 +25,16 @@ git clone https://github.com/seu-usuario/KuiperSettler.git
 
 2. Instale as dependências do projeto:
 cd KuiperSettler
-pip install -r requirements.txt
+pip install -r requirements.txt (Ainda nao tempo, mas eh esseciamente um pip install django) 
 
-3. Execute as migrações do banco de dados:
+4. Execute as migrações do banco de dados:
 python manage.py migrate
 
-4. Inicie o servidor de desenvolvimento:
+5. Inicie o servidor de desenvolvimento:
 
 python manage.py runserver
 
-5. Acesse o projeto em seu navegador em [http://localhost:8000](http://localhost:8000).
+5. Acesse o projeto em seu navegador em [http://localhost:8000](http://localhost:8000)(django tem pode variar isso aqui).
 
 ## Contribuição
 
