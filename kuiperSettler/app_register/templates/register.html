@@ -68,7 +68,8 @@
 <div class="container">
   <div>
     <h2>Registration Form</h2>
-    <form id="registration-form">
+    <form method="post" action="{% url 'user_list' %}">
+      {% csrf_token %}
       <div class="form-group">
         <input type="email" name="email" placeholder="Email" required>
       </div>
