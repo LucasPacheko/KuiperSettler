@@ -59,7 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'accounts/templates'),
-                 os.path.join(BASE_DIR, 'app_register/templates')],
+                 os.path.join(BASE_DIR, 'app_register/templates'),
+                 os.path.join(BASE_DIR, 'kuiperSettler/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

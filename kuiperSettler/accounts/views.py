@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 
 
-def login(request):
+def login_handle(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -16,5 +16,6 @@ def login(request):
         return render(request, 'login.html')
 
 
-def logout(request):
+def logout_handle(request):
+    logout(request)
     return redirect('/')
