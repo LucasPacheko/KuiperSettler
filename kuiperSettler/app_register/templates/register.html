@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  .container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .btn:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="container">
+  <div>
+    <h2>Registration Form</h2>
+    <form id="registration-form">
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

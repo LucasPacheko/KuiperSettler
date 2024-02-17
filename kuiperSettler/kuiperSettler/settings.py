@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'loja',
     'accounts',
+    'app_register',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,8 @@ ROOT_URLCONF = 'kuiperSettler.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'accounts/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'accounts/templates'),
+                 os.path.join(BASE_DIR, 'app_register/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
