@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import User
-
+# from .models import User
+from django.contrib.auth.models import User
 
 # Create your views here.
 def register(request):
@@ -8,10 +8,11 @@ def register(request):
 
 
 def users(request):
-    new_user = User()
-    new_user.email = request.POST.get('email')
-    new_user.password = request.POST.get('password')
-    new_user.save()
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    user = User.objects.create_user(username, password=password)
+    user.save()
+
 
     users = {'users': User.objects.all()}
 

@@ -22,7 +22,8 @@ from . import views
 
 urlpatterns = [
     # path('', views.home, name='home'),
-    path('', RedirectView.as_view(url='accounts/login')),
+    
+    path('', views.homepage, name='homepage'),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('register/', include('app_register.urls'))
