@@ -15,7 +15,18 @@ O KuiperSettler visa proporcionar uma experiência imersiva de jogo de interpret
 - **Missões e Aventuras:** Participe de missões emocionantes, desde resgates espaciais até investigações científicas em planetas desconhecidos.
 - **Construção de Personagem:** Crie e desenvolva seu próprio personagem, com habilidades únicas e uma história pessoal rica.
   
+## Tecnologias a serem implementadas
 
+- **Frontend:** React para construir a interface do usuário do jogo no navegador.
+
+- **Backend para lógica do jogo:** Usando Django para o Back-end
+
+- **Microsserviços para mecânicas do jogo:** Você pode implementar serviços separados (talvez usando Flask, FastAPI ou outras estruturas) para lidar com mecânicas específicas do jogo, como cálculos complexos, multiplayer, etc. Cada serviço pode ser escalável e especializado em uma tarefa específica.
+
+- **Comunicação entre serviços:** Os microsserviços podem se comunicar uns com os outros usando chamadas de API ou mensagens assíncronas (usando tecnologias como RabbitMQ, Kafka, ou AWS SQS). Isso permite que eles cooperem para fornecer funcionalidades avançadas para o jogo.
+
+- **Orquestração de contêineres:**  Docker ou Kubernetes para orquestrar os contêineres que executam seus serviços, garantindo que eles sejam escaláveis, confiáveis e fáceis de gerenciar.
+  
 ## Instalação
 
 Para executar o projeto localmente, siga estas etapas:
