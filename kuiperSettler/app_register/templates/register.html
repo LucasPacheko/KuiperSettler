@@ -17,14 +17,15 @@
     background-color: #333;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px;
   }
   .navbar a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    margin-right: 20px;
   }
   .container {
     flex-grow: 1;
@@ -45,7 +46,7 @@
   }
   .btn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -60,9 +61,15 @@
 <body>
 
 <div class="navbar">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
+  <div>
+    <a href="/">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <div>
+    <a href="/register" class="btn">Register</a>
+    <a href="/accounts/login" class="btn">Login</a>
+  </div>
 </div>
 
 <div class="container">
@@ -78,6 +85,7 @@
       </div>
       <button type="submit" class="btn">Submit</button>
     </form>
+    
   </div>
 </div>
 

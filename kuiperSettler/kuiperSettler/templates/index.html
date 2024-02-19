@@ -1,13 +1,78 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    text-align: center;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background-color: #0056b3;
+  }
+</style>
 </head>
 <body>
-    <h1>Bem-vindo à Homepage do Meu Projeto</h1>
-    <p>Esta é uma página inicial simples para começar o seu projeto Django.</p>
+
+<div class="navbar">
+  <div>
+    <a href="/">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <div>
+    <a href="/register" class="btn">Register</a>
+    <a href="/accounts/login" class="btn">Login</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content">
+    <h2>Welcome to our Homepage</h2>
+    <p>This is a sample homepage with the same style as the registration form page.</p>
+    <p>You can add more content here as needed.</p>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+</div>
+
 </body>
 </html>
