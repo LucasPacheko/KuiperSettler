@@ -60,17 +60,25 @@
     <a href="#">Contact</a>
   </div>
   <div>
-    <a href="/register" class="btn">Register</a>
-    <a href="/accounts/login" class="btn">Login</a>
+    {% if user.is_authenticated %}
+      <img src="/static/images/icons/generic_profile.png" alt="Profile Image" style="height: 30px; width: 30px; border-radius: 50%; margin-right: 10px;">
+      <a href="{% url 'logout' %}" class="btn">Logout</a>
+    {% else %}
+      <a href="{% url 'login' %}" class="btn">Login</a>
+      <a href="{% url 'register' %}" class="btn">Register</a>
+    {% endif %}
   </div>
 </div>
 
 <div class="container">
   <div class="content">
     <h2>Welcome to our Homepage</h2>
-    <p>This is a sample homepage with the same style as the registration form page.</p>
-    <p>You can add more content here as needed.</p>
-    <a href="#" class="btn">Get Started</a>
+    {% if user.is_authenticated %}
+      <p>You are logged in as {{ user.username }}. <a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+      <p>You are not logged in. <a href="{% url 'login' %}">Login</a> or <a href="{% url 'register' %}">register</a> to continue.</p>
+    {% endif %}
+
   </div>
 </div>
 
