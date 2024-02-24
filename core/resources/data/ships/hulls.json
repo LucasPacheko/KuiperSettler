@@ -1,0 +1,34 @@
+[
+    {
+      "Class": "Shuttle",
+      "Type": "Clipper",
+      "Mass": "1580 Tonnes",
+      "Max Speed": "35 m/s",
+      "Armor Thickness": "5 cm",
+      "Structural Integrity": 1000
+    },
+    {
+      "Class": "Sprinter",
+      "Type": "Corvette",
+      "Mass": "3080 Tonnes",
+      "Max Speed": "35 m/s",
+      "Armor Thickness": "8 cm",
+      "Structural Integrity": 1000
+    },
+    {
+      "Class": "Tugboat",
+      "Type": "Clipper",
+      "Mass": "3595",
+      "Max Speed": "26 m/s",
+      "Armor Thickness": "5 cm",
+      "Structural Integrity": 1000
+    },
+    {
+    "Class": "Raines",
+    "Type": "Frigate",
+    "Mass": "5095",
+    "Max Speed": "22 m/s",
+    "Armor Thickness": "15 cm",
+    "Structural Integrity": 3000
+    }
+]
