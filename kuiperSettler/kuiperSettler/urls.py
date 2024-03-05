@@ -26,5 +26,6 @@ urlpatterns = [
     path('', views.homepage, name='homepage'),
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
-    path('register/', include('app_register.urls'))
+    path('register/', include('app_register.urls')),
+    path('inventory/', include('inventory.urls'))
 ]

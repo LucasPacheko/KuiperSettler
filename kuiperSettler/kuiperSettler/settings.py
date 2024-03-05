@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'loja',
     'accounts',
     'app_register',
+    'inventory'
 ]
 
 MIDDLEWARE = [
@@ -61,6 +62,7 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR, 'accounts/templates'),
                  os.path.join(BASE_DIR, 'app_register/templates'),
                  os.path.join(BASE_DIR, 'kuiperSettler/templates'),
+                 os.path.join(BASE_DIR, 'inventory/templates'),
                  os.path.join(BASE_DIR, 'kuiperSettler/static')
 ],
         'APP_DIRS': True,
